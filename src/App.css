@@ -1,0 +1,261 @@
+
+.container {
+  height: 100vh;
+  z-index: -10;
+  background-color: antiquewhite;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.container::-webkit-scrollbar{
+  display: none;
+}
+
+
+.header {
+  min-height: 60px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.header .img {
+  background-image: url('../public/images-20220517T132837Z-001/images/logo.svg');
+  height: 30px;
+  width: 150px;
+  background-repeat: no-repeat;
+  margin-left: 10%;
+}
+
+.header .menu {
+  display: flex;
+}
+.header .menu a {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.header .rightMenu {
+  display: flex;
+  margin-right: 15px;
+}
+
+.header .rightMenu a {
+  font-weight: 700;
+  margin-right: 18px;
+}
+
+.burgerNav {
+  position: fixed;
+  top: 0;
+  transition:all .5s ease;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  z-index: 100;
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.hide {
+  display: none;
+}
+.burgerNav li {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+.burgerNav li a {
+  font-weight: 600;
+}
+
+.burgerNav .icon {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.models{
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-image: url('../public/images-20220517T132837Z-001/images/model-s.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.model3{
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-image: url('../public/images-20220517T132837Z-001/images/model-3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.modelx{
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-image: url('../public/images-20220517T132837Z-001/images/model-x.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.modely{
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-image: url('../public/images-20220517T132837Z-001/images/model-y.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.solar{
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-image: url('../public/images-20220517T132837Z-001/images/solar-panel.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.solarRoof{
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-image: url('../public/images-20220517T132837Z-001/images/solar-roof.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+
+.item {
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-image: url('../public/images-20220517T132837Z-001/images/accessories.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: start;
+  align-items: center;
+}
+
+.itemText {
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.buttonWrap {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.buttonWrap .left {
+  background-color: rgb(43, 43, 43);
+  height: 40px;
+  cursor: pointer;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  opacity: .85;
+  text-transform: uppercase;
+}
+
+.buttonWrap .right {
+  background-color: rgb(228, 228, 228);
+  cursor: pointer;
+  height: 40px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 100px;
+  opacity: .85;
+  text-transform: uppercase;
+}
+
+.downArrow {
+  background-image: url('../public/images-20220517T132837Z-001/images/down-arrow.svg');
+  height: 70px;
+  width: 70px;
+  margin-top: 5px;
+  overflow-x: hidden;
+  animation: hop 2s infinite;
+}
+
+@keyframes hop {
+  0%,20%,50%,80%,100%{
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  60%{
+    transform: translateY(3px);
+  }
+}
+
+@media(max-width: 768px) {
+  .header .menu {
+    display: none;
+  }
+
+
+}
